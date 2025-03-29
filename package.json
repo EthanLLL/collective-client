@@ -1,0 +1,29 @@
+{
+  "name": "@collective/client",
+  "version": "0.1.0",
+  "description": "Unified LLM client for OpenAI and Anthropic",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "dev": "node src/index.js",
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": [
+    "LLM",
+    "AI",
+    "OpenAI",
+    "Anthropic",
+    "Streaming",
+    "Agent"
+  ],
+  "author": "Ethan Luo(ZZL)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EthanLLL/collective-client"
+  },
+  "packageManager": "pnpm@10.7.0"
+}
