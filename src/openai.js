@@ -27,8 +27,7 @@ export function createOpenAIClient(client) {
             toolCallsBuffer[index].function.arguments += delta.tool_calls[0].function.arguments
           }
         }
-
-        if (finishReason === 'stop') break
+        if (finishReason) yield { role: 'assistant', finish_reason: finishReason }
       }
       if (toolCallsBuffer.length > 0) {
         yield { role: 'assistant', tool_calls: toolCallsBuffer }

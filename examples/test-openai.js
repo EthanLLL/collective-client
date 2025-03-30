@@ -13,7 +13,8 @@ const client = createOpenAIClient(openai)
 
 for await (const chunk of client.stream({
   model: 'openai/gpt-4o-mini',
-  messages: [{ role: 'user', content: 'what is The age of Elon musk and Trump' }],
+  // messages: [{ role: 'user', content: 'what is The age of Elon musk and Trump' }],
+  messages: [{ role: 'user', content: 'Hi' }],
   tools: [{
     type: 'function',
     function: {
